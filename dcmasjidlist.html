@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subpage 2-1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="banner"><font color="red">Dawah</font> <font color="navy">Club</font><br><p class="underbanner">INVITE, DON'T FIGHT</p></div>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+    <div class="content">
+        Page
+    </div>
+</body>
+<footer class="footer">
+    © 2025 websitename All rights reserved.
+</footer>
+</html>

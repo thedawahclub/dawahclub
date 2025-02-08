@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    
+    <div class="banner">
+        
+        <button class="menu-btn" onclick="toggleSidebar()">
+            ☰ 
+        </button>
+        <font color="red">Dawah</font> <font color="navy">Club</font><br><p class="underbanner">INVITE, DON'T FIGHT</p><p class="smalltext">One Stop Website For Dawah And Daaee</p></div>
+    
+    <div id="sidebar-container"></div>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+    <div class="content">       
+       <div class="hd1">HADITH (SUNNAH)</div>
+       
+      
+          <div class="t1">
+            <br>** Hadith (or Sunnah) is the collection of commands, sayings, actions, expressed approvals/disapprovals and implicit approvals of Prophet Muhammad. It explains many aspects of the Quran and help us understand it.
+        Hadith were also memorized and recorded meticulously by the Prophet’s companions and passed on to successive generations. There are eight widely used Hadith Collections and of them Six are most famous.
+           <br>**Every one of us should have some basic knowledge of hadith, the famous collections and classification (based on authenticity) of hadith . Familiarize yourself with the hadith collections of Imam Bukhari and Muslim.
+       
+         </div>    
+         <br><br><div class="hd1">(1) Sahih Al-Bukhari</div>
+        
+         <div class="t1">Generally regarded as the single most authentic collection of hadith. Sahih Al-Bukhari covers topics from almost all aspects of life in providing proper guidance from the messenger of Allah. In Imam Bukhari's 'Al-Jami-al-Sahih' (Sahih Al Bukhari) 
+            the Imam (born within 180 years of Prophet's death) had recorded all the hadiths of the Prophet which he found to be genuine after thorough examination and scrutiny. 
+            He spent sixteen years in research and examined more than sixty thousand hadiths from which he selected only hadiths whose genuineness and accuracy is established beyond the slightest doubt. Deducting duplicates, the Imam's collection contain about four thousand distinct hadiths. 
+            <br><br>* Book Version: (ISBN #9789960717319, published by Dar-us-Salam)
+             <br>* Access Online: <a class="link"href="https://sunnah.com/bukhari" target="_blank"> Sahih Al-Bukhari: wwww.sunnah.com</a>
+        </div>  
+        <br><br><div class="hd1">(2) Sahih Muslim</div>
+        
+         <div class="t1">Sahih Muslim is the most authentic book of Hadith after Sahih Al-Bukhari and contains about 7,500 hadiths. Imam Muslim (born within 190 years of Prophet's death) is one of the foremost preservers of hadith of the Prophet.
+             His book comes second only to Sahih al Bukhari in terms of authenticity according to majority of scholars. 
+            <br><br>* Book Version: (ISBN#9789960991900, published by Dar-us-Salam)
+             <br>* Access Online: <a class="link"href="https://sunnah.com/muslim" target="_blank"> Sahih Muslim: wwww.sunnah.com</a>
+        </div>  
+        <br><br><div class="hd1">The other four prominent Hadith collections</div>
+        
+         <div class="t1">Sunan Abu Dawood (or Abi Dawud), Jami At-Tirmidhi, Sunan An-Nasa’I and Sunan Ibn Majah. These four collections contains mostly authentic but also some weak (doubtful or deficient in proof of authenticity) hadiths. Therefore these must be approached with careful consideration. 
+            In some of the recent versions of these collections, hadiths are marked with the grade of authenticity for our benefit. 
+            <br>
+             <br>(3) Sunan Abu Dawood (ISBN #9789960500119) <a class="link"href="https://sunnah.com/abudawud" target="_blank"> Sunan Abu Dawood: wwww.sunnah.com</a>
+             <br> (4) Jami At-Tirmidhi (ISBN #9789960996738)  <a class="link"href="https://sunnah.com/tirmidhi" target="_blank"> Jami At-Tirmidhi: wwww.sunnah.com</a>
+             <br> (5) Sunan An-Nasa'i (ISBN #9789960587608) <a class="link"href="https://sunnah.com/nasai" target="_blank"> Sunan An-Nasa'i: wwww.sunnah.com</a>
+             <br> (6) Sunan Ibn Majah (ISBN #9789960988139) <a class="link"href="https://sunnah.com/ibnmajah" target="_blank"> Sunan Ibn Majah: wwww.sunnah.com</a>
+            <br><br> ** The two other widely used ones are "Muwatta Imam Malik" and "Musnad Ahmad ibn Hanbal". Online version of both of these are also available @ www.sunnah.com.
+
+        </div>  
+        
+       <br><br><div class="hd1">Understanding Hadith, Sunnah and Authenticity</div>
+       <div class="t1">Best place start on this journey is the must see vidoes from the link below.
+        <br><br><font color="blue">*** Must see videos for all active level members, no exceptions , no excuses ***</font>
+        <br> <a class="link"href="https://www.youtube.com/watch?v=bX33vuY-Io8" target="_blank">(1) Usool ul Hadith Part 1/3 by Dr Yasir Qadhi.</a> 
+        <br> <a class="link"href="https://www.youtube.com/watch?v=XoGvQ5eXO2s" target="_blank">(2) Usool ul Hadith Part 2/3 by Dr Yasir Qadhi.</a>
+        <br> <a class="link"href="https://www.youtube.com/watch?v=7YfDdA2_HPo" target="_blank">(2) Usool ul Hadith Part 3/3 by Dr Yasir Qadhi.</a>
+        <br> <a class="link"href="https://www.youtube.com/watch?v=KRP0QeyKlYU" target="_blank">(4) Sciences of Hadith Part 1/2- Yasir Qadhi.</a>
+        <br> <a class="link"href="https://www.youtube.com/watch?v=Q-_RSi0B7g4" target="_blank">(4) Sciences of Hadith Part 2/2- Yasir Qadhi.</a>
+       
+        </div>
+           
+       <br><br><div class="hd1">More Videos on Hadith</div>
+        
+       <div class="t1">More videos to come...
+          
+          
+      </div>  
+      
+         
+       
+    </div> 
+    
+
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
+        }
+
+        fetch("sidebar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("sidebar-container").innerHTML = data;
+            });
+    </script>
+
+
+</body>
+<footer class="footer">
+  Contact Us Email: thedawahclub@gmail.com  ... Copyright © 2025 DawahClub.org, All rights reserved. ****<a href="index.html">HOME</a>****
+</footer>
+</html>
+

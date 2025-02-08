@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    
+    <div class="banner">
+        
+        <button class="menu-btn" onclick="toggleSidebar()">
+            ☰ 
+        </button>
+        <font color="red">Dawah</font> <font color="navy">Club</font><br><p class="underbanner">INVITE, DON'T FIGHT</p><p class="smalltext">One Stop Website For Dawah And Daaee</p></div>
+    
+    <div id="sidebar-container"></div>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+    <div class="content">       
+       <div class="hd1">THOSE WHO ARE BEING CALLED (MAD'U)</div>
+       <div class="hd2"><font color="blue">Some important points to remember about those who are being Called (Mad'u)</font></div>
+         
+    <div class="t1">
+        <br>•  Know your audience (the one's being called);
+        <br>•  Find out about your audience ahead of time. In the west our primary audience are Christians. So we should familiarize ourselves with basic information on Christianity. If they are Christians find out which group they belong to. As there is different sects in Christianity, fundamentals of belief of each sect vary widely with the other sects. For more discussion go to 'comparative religion' section of this site.
+        <br>•  Keep in mind age, gender and ethnicity of the individual being called. In general the best person to talk to someone is one who shares a similar background him/her. For example, it is good to have a woman to invite another woman. And it is better to have a revert woman to invite another woman. And it is even better to have a white revert woman to invite a white woman. Obviously all of this is applicable subject to availability.
+        <br>•  Another point to consider is the level of understanding and education. Approaching someone with higher level of education and someone with lower level or no education should be different. For example, talking to someone with no education about the signs relating to scientific fact like embryology or cosmology in Quran may not be the most ideal approach.
+        <br>•  keep an eye on interest level or mood of the person. Interested, hostile, not interested or may be neutral.
+        <br>•  Finally keep in mind there are various types of people and personalities in our society. Some are engineers, some are doctors, some are accountants, some are business owners, some are laborers, some are students, some are priests, some are teachers, some are scientists, and some are entertainers, some are CEO's while other are beggars or bums. Some are polite and some are rude, some are arrogant and some are humble, some are moral and some are immoral, some are criminal and some are lawman.
+        <br>•  Research and gather as much information as you can about your audience and cater to your audience accordingly.
+  </div>
+  <br>
+      <div class="hd1">DAWAH TRAINING COURSE (VIDEO COURSES)</div>
+       <div class="t1">All active members should go through all the dawah course videos. The first video course by Bilal Philips is a must for all active members.
+        <br><br><font color="blue">Dawah training course by Bilal Philips. This lecture seris conatins total of 13 videos</font>
+        <br> <a class="link"href="https://www.youtube.com/watch?v=pVgL7wKynrQ&list=PLtsu88lqDit_AAAaYRLpsG4ItWaBbJtv6" target="_blank">Dawah Training Course by Dr Bilal Philips</a> 
+        
+       </div>
+        <div class="t1">
+            <br><br><font color="blue">***Dawah Training lectures by Kamal El-Makki</font>
+            <br> <a class="link"href="https://www.youtube.com/watch?v=zD7jVCRiW8Y" target="_blank">(1) How to Give Da'wah - Kamal el-Mekki - Part 1/2</a> 
+            <br> <a class="link"href="https://www.youtube.com/watch?v=-Bmu3-0gq-o&list=PL8qy3qJGg2T2QtCd_ohy2-xHQITdnpNw4" target="_blank">(2) How to Give Da'wah - Kamal el Mekki - Part 2/2</a>
+            <br> <a class="link"href="https://www.youtube.com/watch?v=_Hc9DiDOjJk&list=PL8qy3qJGg2T2QtCd_ohy2-xHQITdnpNw4" target="_blank">How to Give Shahada in 10 Minutes -Kamal El-Mekki </a>
+            
+        </div>   
+        
+        <div class="t1">
+        <br><br><font color="blue">Mini Dawah Training Course by Abdurraheem Green. This lecture seris contains 6 videos.</font>
+        <br> <a class="link"href="https://www.youtube.com/watch?v=OdvuAnfvClc&list=PL0l3xlkh7UnvUed8fwDdDSJ3KGWBrNwjF" target="_blank">How to Give Da'wah by Abdurraheem Green</a> 
+      
+         
+        </div>
+        
+
+
+        
+         
+       
+    </div> 
+    
+
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
+        }
+
+        fetch("sidebar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("sidebar-container").innerHTML = data;
+            });
+    </script>
+
+
+</body>
+<footer class="footer">
+  Contact Us Email: thedawahclub@gmail.com  ... Copyright © 2025 DawahClub.org, All rights reserved. ****<a href="index.html">HOME</a>****
+</footer>
+</html>
+
+
