@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => console.error("Error loading sidebar:", error));
 });
 
+
 function toggleSidebar() {
     document.getElementById("sidebar").classList.toggle("active");
 }
