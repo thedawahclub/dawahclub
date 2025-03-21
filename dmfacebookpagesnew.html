@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>subpage 2-1</title>
+    <title>Dawah Club</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
+
 <body>
-    <div class="banner"><font color="red">Dawah</font> <font color="navy">Club</font><br><p class="underbanner">INVITE, DON'T FIGHT</p></div>
+    
+    <div class="banner">
+        
+        <button class="menu-btn" onclick="toggleSidebar()">
+            ☰ 
+        </button>
+        <font color="red">Dawah</font> <font color="navy">Club</font><br><p class="underbanner">INVITE, DON'T FIGHT</p><p class="smalltext">One Stop Website For Dawah And Daaee</p></div>
+    
+    <div id="sidebar-container"></div>
     <div id="navbar-placeholder"></div>
     <script>
         fetch("navbar.html")
@@ -16,11 +26,56 @@
                 document.getElementById("navbar-placeholder").innerHTML = data;
             });
     </script>
-    <div class="content">
-        Page
-    </div>
+    <div class="content">       
+       <div class="hd1">INFORMATION FOR NEW MUSLIMS</div>
+       <div class="hd2"><font color="blue">PHAMPHLETS</font>
+        <br>THERE ARE TWO TYPES OF PAMPHLETS IN THIS PAGE
+        <br>(1) Gereral dawah pamphlets and (2) Issue specific pamphlets.
+       
+
+      
+       </div><br>
+             <div class="hd1">TYPE ONE: GENERAL DAWAH PAMPHLET</div>  
+        <div class="t1">
+            <br> As part or dawah material please hand out one of each to every sister/brother of our humanity. Everyone gets these 2 pamphlets whether it is a street dawah, dawah table or stall, or when someone ask you about information on Islam.
+            <br>* 1. Short Introduction To Islam.
+             <br>* 2. Short Introduction To The Quran.
+            
+
+        </div>
+        <br> <div class="hd1">TYPE TWO: SOME ISSUE SPECIFIC PAMPHLETS</div>  
+        <div class="t1">
+         <br>These pamphlets should never be distributed just by itself. These should always be given in addition to the two above general pamphlets. These type of pamphlets should be used in response to a specific enquiry on certain topic. 
+            Always good to have some of these handy while on dawah activity or outing.
+        <br>~ Frequently asked questions about Islam and Muslims. (This pamphlet is not available yet, we are working on it.)
+        <br>~ Misconceptions about Islam and Muslims. (This pamphlet is not available yet, we are working on it.)
+        <br>~ And many more to come.
+        <br>
+        </div>
+          
+         
+       
+    </div> 
+    
+
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
+        }
+
+        fetch("sidebar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("sidebar-container").innerHTML = data;
+            });
+    </script>
+
+
 </body>
 <footer class="footer">
-    © 2025 websitename All rights reserved.
+  Contact Us Email: thedawahclub@gmail.com  ... Copyright © 2025 DawahClub.org, All rights reserved. ****<a href="index.html">HOME</a>****
 </footer>
 </html>
+
+
