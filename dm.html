@@ -3,11 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 3</title>
+    <title>Dawah Club</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
+
 <body>
-    <div class="banner"><font color="red">Dawah</font> <font color="navy">Club</font><br><p class="underbanner">INVITE, DON'T FIGHT</p></div>
+    
+    <div class="banner">
+        
+        <button class="menu-btn" onclick="toggleSidebar()">
+            ☰ 
+        </button>
+        <font color="red">Dawah</font> <font color="navy">Club</font><br><p class="underbanner">INVITE, DON'T FIGHT</p><p class="smalltext">One Stop Website For Dawah And Daaee</p></div>
+    
+    <div id="sidebar-container"></div>
     <div id="navbar-placeholder"></div>
     <script>
         fetch("navbar.html")
@@ -16,11 +26,63 @@
                 document.getElementById("navbar-placeholder").innerHTML = data;
             });
     </script>
-    <div class="content">
-        Page
-    </div>
+    <div class="content">       
+       <div class="hd1">DAWAH MATERIALS</div>
+       <div class="hd2"><font color="blue">PHAMPHLETS</font>
+        <br>THERE ARE TWO TYPES OF PAMPHLETS IN THIS PAGE
+        <br>(1) Gereral dawah pamphlets and (2) Issue specific pamphlets.
+       
+
+      
+       </div><br>
+             <div class="hd1">TYPE ONE: GENERAL DAWAH PAMPHLET</div>  
+          <div class="t1">
+            <br> As part or dawah material please hand out one of each to every sister/brother of our humanity. Everyone gets these 2 pamphlets whether it is a street dawah, dawah table or stall, or when someone ask you about information on Islam.
+            <br>* 1. Short Introduction To Islam.
+             <br>* 2. Short Introduction To The Quran.
+            
+
+        </div>
+        <br> <div class="hd1">TYPE TWO: SOME ISSUE SPECIFIC PAMPHLETS</div>  
+        <div class="t1">
+          <b>(1) Remember dawah on a basic level (to invite) is an obligation as mentioned in the homepage with evidence from Quran and Hadith.</b>
+         <br>No one is excused. Every one of us has to fulfill this obligation depending on your scope, knowledge and ability if we are to justify our living in non-Muslim society/country.
+        <br>-- If we don't fulfill this obligation, What are we going to say to Allah in the day of judgment?
+        <br>~ that we migrated to non-Muslim society/country for health, wealth and prosperity i.e. dunya. (answer: Dunya is all he will get as Prophet (pbuh) said, "whoever emigrated for worldly benefits or for a woman to marry, his emigration was for what he emigrated for. Bukhari #1)
+        <br>~ that we lived in non-muslim society/country and didn't move to a Muslim land (without a valid reason) because we were born there. (answer: Allah said, "their refuge is Hell - and evil it is as a destination " Suarah 4:97).
+        <br>~ that we lived there and did fulfill the five pillars of Islam (i.e. I had belief and did righteous deeds). (answer: Allah said, "Indeed, mankind is in loss, Except for those who have believed and done righteous deeds and advised each other to Haqq (Truth i.e. Allah, Islam etc.) and advised each other to Sabr (patience and perseverance). Surah 107).
+        <br>
+        <br><b>(2) Remember the Honor that comes with this obligation.</b>
+        <br>There is no Messenger (Rasulullah) after Prophet Muhammad (pbuh) so Allah honored us with the obligation of carrying His message. Which is a huge honor only given to the Ummah of the final Prophet (pbuh).
+         <br><br><b>(3) Remember the rewards that comes with this obligation.</b>
+            <br>If Allah guides someone to Islam through our dawah that can start a continuous reward through him and his future generations of righteous children, and others through them that will come in the fold of Islam, potentially collecting rewards till the Last day. (Reference in homepage)
+          <br><br><b>(4) Finally remember the punishment of Allah here and hereafter for not fulfilling the obligation.</b>
+          <br>As highlighted in Surah Al-Asr (107:2) as being at loss, as being cursed in Surah Al-Baqarah (2:159), as being replaced by other people in Surah Muhammad (47:38) etc.
+        </div>
+          
+         
+       
+    </div> 
+    
+
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
+        }
+
+        fetch("sidebar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("sidebar-container").innerHTML = data;
+            });
+    </script>
+
+
 </body>
 <footer class="footer">
-    © 2025 websitename All rights reserved.
+  Contact Us Email: thedawahclub@gmail.com  ... Copyright © 2025 DawahClub.org, All rights reserved. ****<a href="index.html">HOME</a>****
 </footer>
 </html>
+
+
