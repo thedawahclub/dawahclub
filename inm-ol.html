@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dawah Club </title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    
+    <div class="banner">
+        
+        <button class="menu-btn" onclick="toggleSidebar()">
+            ☰ 
+        </button>
+        <font color="red">Dawah</font> <font color="navy">Club</font><br><p class="underbanner">INVITE, DON'T FIGHT</p><p class="smalltext">One Stop Website For Dawah And Daaee</p></div>
+    
+    <div id="sidebar-container"></div>
+    <div id="navbar-placeholder"></div>
+    <script>
+        fetch("navbar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            });
+    </script>
+    <div class="content">       
+       <div class="hd1">NEW MUSLIM RESOURCES</div>
+
+<div class="hd2">
+<font color="blue">FACEBOOK PAGES & PDF GUIDES</font>
+<br>These Facebook pages have been created to help new Muslims learn Islam in their own language.
+<br>Each language has a dedicated Facebook page together with a downloadable PDF guide.
+</div>
+
+<br>
+
+<div class="hd1">AVAILABLE LANGUAGES</div>
+
+<div class="t1">
+
+<br><font color="blue"><b>ENGLISH</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infofnm" target="_blank">
+Information for New Muslims
+</a>
+<br>• PDF:
+<a class="link" href="english.pdf" target="_blank">
+Download English Guide
+</a>
+
+<br><br><font color="blue"><b>ROMANIAN</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infofnmro" target="_blank">
+Informații pentru musulmani noi
+</a>
+<br>• PDF:
+<a class="link" href="romanian.pdf" target="_blank">
+Download Romanian Guide
+</a>
+
+<br><br><font color="blue"><b>GERMAN</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infofnmd" target="_blank">
+Information für neue Muslime
+</a>
+<br>• PDF:
+<a class="link" href="german.pdf" target="_blank">
+Download German Guide
+</a>
+
+<br><br><font color="blue"><b>SPANISH</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infoPNM" target="_blank">
+Información para nuevos musulmanes
+</a>
+<br>• PDF:
+<a class="link" href="spanish.pdf" target="_blank">
+Download Spanish Guide
+</a>
+
+<br><br><font color="blue"><b>PORTUGUESE</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infoPONM" target="_blank">
+Informações para os novos Muçulmanos
+</a>
+<br>• PDF:
+<a class="link" href="portuguese.pdf" target="_blank">
+Download Portuguese Guide
+</a>
+
+<br><br><font color="blue"><b>ITALIAN</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infopnmi" target="_blank">
+Informazioni per nuovi Musulmani
+</a>
+<br>• PDF:
+<a class="link" href="italian.pdf" target="_blank">
+Download Italian Guide
+</a>
+
+<br><br><font color="blue"><b>POLISH</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infodnm" target="_blank">
+Informacje dla nowych Muzułmanów
+</a>
+<br>• PDF:
+<a class="link" href="polish.pdf" target="_blank">
+Download Polish Guide
+</a>
+
+<br><br><font color="blue"><b>SWEDISH</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infofnms" target="_blank">
+Information för nya muslimer
+</a>
+<br>• PDF:
+<a class="link" href="swedish.pdf" target="_blank">
+Download Swedish Guide
+</a>
+
+<br><br><font color="blue"><b>BOSNIAN / CROATIAN / SERBIAN</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infofnmb" target="_blank">
+Informacije za nove muslimane
+</a>
+<br>• PDF:
+<a class="link" href="bcs.pdf" target="_blank">
+Download Guide
+</a>
+
+<br><br><font color="blue"><b>RUSSIAN</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infofnmr" target="_blank">
+Информация для новых мусульман
+</a>
+<br>• PDF:
+<a class="link" href="russian.pdf" target="_blank">
+Download Russian Guide
+</a>
+
+<br><br><font color="blue"><b>UKRAINIAN</b></font>
+<br>• Facebook:
+<a class="link" href="https://www.facebook.com/infofnmu" target="_blank">
+Інформація для нових мусульман
+</a>
+<br>• PDF:
+<a class="link" href="ukrainian.pdf" target="_blank">
+Download Ukrainian Guide
+</a>
+
+</div>
+
+<br>
+
+<div class="hd1">ABOUT THESE RESOURCES</div>
+
+<div class="t1">
+These Facebook pages are intended to provide authentic introductory material for people who have recently accepted Islam. The accompanying PDF guides are suitable for personal study, sharing with family and friends, or printing for local dawah efforts.
+
+<br><br>
+If your language is not yet listed, more translations will be added, in shaa Allah.
+</div>
+          
+         
+       
+    </div> 
+    
+
+    <script>
+        function toggleSidebar() {
+            let sidebar = document.getElementById("sidebar");
+            sidebar.style.left = sidebar.style.left === "0px" ? "-250px" : "0px";
+        }
+
+        fetch("sidebar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("sidebar-container").innerHTML = data;
+            });
+    </script>
+
+
+</body>
+<footer class="footer">
+  Contact Us Email: thedawahclub@gmail.com  ... Copyright © 2025 DawahClub.org, All rights reserved. ****<a href="index.html">HOME</a>****
+</footer>
+</html>
+
+
